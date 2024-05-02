@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creat02</title>
+    <link rel="stylesheet" href="">
+</head>
+        <body>
+            <div class="container">
+                <div class="login">
+                 <h2>Sign up</h2>
+                 <div class="input">
+                     <p>Password :</p>
+                     <input type="text" placeholder="Password.." />
+                 </div>
+                 <div class="input">
+                     <p>Conferm Password :</p>
+                     <input type="password" id="myInput" placeholder="Conferm password.." />
+                 </div>
+                 <input id="show" type="checkbox" onclick="myFunction()"><p id="A">Show Password</p>
+                 <!-- <a href="/prj_2.html"><button>Create</button></a> -->
+                </div>  
+                
+            </div>
+        </body>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myInput");
+                if (x.type === "password") {
+                    x.type = "text";
+                } else {
+                    x.type = "password";
+                }
+  }
+        </script>
+</html>
